@@ -1,0 +1,7 @@
+<h1><%= @poem.title %></h1>
+
+<p>By <%= @poem.author %></p>
+
+<p>Borrowed from <%= link_to 'here', @poem.source %></p>
+
+<%= simple_format(@poem.body) %>

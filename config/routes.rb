@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+  # /poems       poems#index
+  # /poems/1234  poems#show
+  resources :poems
+
+
+  # /    (homepage)
+  root 'poems#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,7 @@
+<h1>Beautiful Poems</h1>
+
+<% @poems.each do |poem| %>
+
+<h2><%= link_to poem.title, poem_path(poem) %></h2>
+<p>By: <i><%= poem.author.upcase %></i></p>
+<% end %>
